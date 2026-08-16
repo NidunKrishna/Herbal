@@ -173,8 +173,8 @@ st.markdown(
     .stat-box .num { font-size: 1.6rem; font-weight: 700; color: #111111 !important; }
     .stat-box .lbl { color: #333333 !important; font-size: 0.85rem; }
 
-    /* Native bordered st.container(border=True) used for product cards */
-    div[data-testid="stVerticalBlockBorderWrapper"] {
+    /* Native bordered st.container(border=True, key="pcard_...") — product cards only */
+    div[class*="st-key-pcard_"] {
         background: #FFFFFF;
         border-radius: 16px !important;
         box-shadow: 0 3px 14px rgba(53,94,59,0.10);
@@ -418,7 +418,7 @@ if st.session_state.show_dialog:
 # --------------------------------------------------------------------------
 def render_product_card(p, key_prefix=""):
     pid = p["id"]
-    with st.container(border=True):
+    with st.container(border=True, key=f"pcard_{key_prefix}_{pid}"):
         top_l, top_r = st.columns([4, 1])
         with top_l:
             st.markdown(
