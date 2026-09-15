@@ -1,0 +1,29 @@
+@keyframes softEntrance {
+  from {
+    opacity:.6;
+    transform:translateY(7px)
+  }
+  to {
+    opacity:1;
+    transform:translateY(0)
+  }
+}
+.hero-copy,.shop-heading,.article-heading {
+  animation:softEntrance .65s ease-out
+}
+.product-photo,.journal-card img {
+  transition:transform .5s ease,opacity .3s
+}
+.journal-card:hover img {
+  opacity:.9
+}
+.st-key-nav_cart button {
+  transition:opacity .2s
+}
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    animation:none!important;
+    transition:none!important;
+    scroll-behavior:auto!important
+  }
+}

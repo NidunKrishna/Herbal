@@ -1,0 +1,37 @@
+[role="dialog"] {
+  background:var(--ivory);
+  border-radius:0!important;
+  max-height:94vh;
+  overflow-y:auto
+}
+[role="dialog"]:has(.filter-drawer-marker) {
+  position:fixed!important;
+  right:0!important;
+  left:auto!important;
+  top:0!important;
+  bottom:0!important;
+  transform:none!important;
+  width:min(520px,100vw)!important;
+  max-width:100vw!important;
+  max-height:100vh!important;
+  margin:0!important;
+  border:0!important;
+  border-left:1px solid var(--line)!important;
+  padding:20px
+}
+[data-baseweb="tag"] {
+  background:#d8ddcc;
+  color:#20241b;
+  border-radius:20px
+}
+[data-testid="stMultiSelect"] [data-baseweb="select"]>div {
+  border-radius:0;
+  background:transparent;
+  border-color:var(--line)
+}
+[role="dialog"] h2 {
+  font-size:36px!important
+}
+[data-testid="stSlider"] {
+  padding:12px 0
+}

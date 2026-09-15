@@ -1,0 +1,236 @@
+.st-key-homehero {
+  position:relative;
+  margin-top:-16px;
+  margin-bottom:0
+}
+.hero {
+  height:740px;
+  position:relative;
+  overflow:hidden;
+  background:#464632;
+  color:var(--ivory)
+}
+.hero-image {
+  position:absolute;
+  inset:0 0 0 28%
+}
+.hero-photo {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:50% 41%
+}
+.hero-shade {
+  position:absolute;
+  inset:0;
+  background:linear-gradient(90deg,rgba(32,38,24,.92) 0%,rgba(43,47,30,.68) 28%,rgba(70,42,30,.08) 65%),linear-gradient(0deg,rgba(33,29,23,.25),transparent 40%)
+}
+.hero-copy {
+  position:absolute;
+  top:58px;
+  left:var(--gutter);
+  z-index:2
+}
+.hero-copy h1 {
+  font-size:clamp(70px,7.2vw,110px)!important;
+  line-height:.88!important;
+  letter-spacing:-.035em!important;
+  margin:24px 0!important
+}
+.hero-copy>p:last-child {
+  font-size:15px;
+  line-height:1.6;
+  max-width:450px
+}
+.hero-wordmark {
+  font-family:var(--serif);
+  position:absolute;
+  bottom:-32px;
+  left:1.5%;
+  font-size:clamp(100px,17.6vw,290px);
+  line-height:.85;
+  letter-spacing:-.065em;
+  white-space:nowrap;
+  font-weight:400;
+  color:rgba(245,242,233,.92);
+  pointer-events:none
+}
+.hero-caption {
+  position:absolute;
+  right:3%;
+  bottom:180px;
+  font-size:11px;
+  letter-spacing:.12em;
+  writing-mode:vertical-rl
+}
+.st-key-homehero>.stElementContainer:last-child,.st-key-homehero>div:last-child:has(.st-key-hero_shop) {
+  position:absolute;
+  left:var(--gutter);
+  top:475px;
+  z-index:3;
+  width:260px
+}
+.st-key-hero_shop {
+  position:absolute;
+  left:var(--gutter);
+  top:478px;
+  width:260px!important;
+  z-index:3
+}
+.st-key-hero_shop button {
+  background:var(--ivory)!important;
+  color:var(--ink)!important;
+  border:0!important
+}
+.st-key-philosophy {
+  padding:100px 24px;
+  text-align:center;
+  align-items:center
+}
+.st-key-philosophy h2 {
+  font-size:clamp(35px,4.4vw,64px);
+  line-height:1.12!important;
+  letter-spacing:-.025em!important
+}
+.st-key-philosophy button {
+  border:0!important;
+  border-bottom:1px solid var(--ink)!important;
+  border-radius:0!important;
+  max-width:210px;
+  margin:auto
+}
+.st-key-categorystrip {
+  padding:65px var(--gutter) 85px;
+  border-top:1px solid var(--line)
+}
+.st-key-categorystrip h2 {
+  font-size:clamp(40px,4vw,62px)
+}
+.st-key-categorystrip [data-testid="stExpander"] {
+  border:0;
+  border-top:1px solid var(--line);
+  border-radius:0
+}
+.st-key-categorystrip summary {
+  font-family:var(--serif);
+  padding:20px 0
+}
+.st-key-categorystrip summary p {
+  font-size:28px;
+  font-family:var(--serif);
+  letter-spacing:.01em
+}
+.category-reveal {
+  position:relative;
+  height:235px;
+  overflow:hidden
+}
+.category-reveal img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 38%;
+  filter:brightness(.65);
+  transition:transform .6s
+}
+.category-reveal:hover img {
+  transform:scale(1.035)
+}
+.category-reveal p {
+  position:absolute;
+  bottom:4px;
+  left:25px;
+  right:20px;
+  color:white;
+  max-width:400px
+}
+.st-key-categorystrip button {
+  border:0!important;
+  justify-content:flex-start
+}
+.st-key-favourites {
+  padding:70px var(--gutter) 95px;
+  background:#eae5da
+}
+.st-key-founderssection {
+  padding:100px var(--gutter);
+  background:#f1ede3
+}
+.founders-photo img {
+  max-height:640px;
+  object-position:center 40%
+}
+.founders-copy {
+  padding:10px 25px
+}
+.founders-copy p:not(.eyebrow):not(.signature) {
+  max-width:440px
+}
+.st-key-meet_founders {
+  padding:0 25px;
+  max-width:340px
+}
+.st-key-ritualfeature {
+  position:relative
+}
+.ritual-feature {
+  height:570px;
+  position:relative;
+  overflow:hidden;
+  background:#656454;
+  color:#fff
+}
+.ritual-feature img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 40%;
+  filter:brightness(.57)
+}
+.ritual-feature>div {
+  position:absolute;
+  left:var(--gutter);
+  top:70px
+}
+.ritual-feature h2 {
+  font-size:clamp(65px,7vw,100px)
+}
+.st-key-ritual_shop {
+  position:absolute;
+  left:var(--gutter);
+  top:416px;
+  width:255px!important
+}
+.st-key-ritual_shop button {
+  background:var(--ivory)!important;
+  color:var(--ink)!important;
+  border:0!important
+}
+.st-key-homejournal {
+  padding:90px var(--gutter)
+}
+.journal-card img {
+  width:100%;
+  aspect-ratio:1.2;
+  object-fit:cover;
+  margin-bottom:24px
+}
+.journal-card h3 {
+  font-size:32px;
+  margin:0 0 20px!important
+}
+.journal-card .eyebrow {
+  font-size:11px;
+  letter-spacing:.07em
+}
+.st-key-homejournal button,.st-key-journalpage button {
+  border:0!important;
+  justify-content:flex-start;
+  padding-left:0!important
+}
+
+.st-key-categorystrip details {
+  border: 0;
+  border-top: 1px solid var(--line);
+  border-radius: 0;
+}
